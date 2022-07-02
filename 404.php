@@ -1,84 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/404.html   11 Nov 2019 12:45:12 GMT -->
+<!-- belle/404.php   11 Nov 2019 12:45:12 GMT -->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>404 Page Not Found &ndash; Belle Multipurpose Bootstrap 4 Template</title>
-<meta name="description" content="description">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Favicon -->
-<link rel="shortcut icon" href="assets/images/favicon.png" />
-<!-- Plugins CSS -->
-<link rel="stylesheet" href="assets/css/plugins.css">
-<!-- Bootstap CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<!-- Main Style CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
+    <?php include 'Layouts/head.php'; ?>
 </head>
+
 <body class="page-template lookbook-template error-page belle">
 <div class="pageWrapper">
-	<!--Search Form Drawer-->
-	<div class="search">
-        <div class="search__form">
-            <form class="search-bar__form" action="#">
-                <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
-                <input class="search__input" type="search" name="q" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
-            </form>
-            <button type="button" class="search-trigger close-btn"><i class="icon anm anm-times-l"></i></button>
-        </div>
-    </div>
-    <!--End Search Form Drawer-->
-    <!--Top Header-->
-    <div class="top-header">
-        <div class="container-fluid">
-            <div class="row">
-            	<div class="col-10 col-sm-8 col-md-5 col-lg-4">
-                    <div class="currency-picker">
-                        <span class="selected-currency">USD</span>
-                        <ul id="currencies">
-                            <li data-currency="INR" class="">INR</li>
-                            <li data-currency="GBP" class="">GBP</li>
-                            <li data-currency="CAD" class="">CAD</li>
-                            <li data-currency="USD" class="selected">USD</li>
-                            <li data-currency="AUD" class="">AUD</li>
-                            <li data-currency="EUR" class="">EUR</li>
-                            <li data-currency="JPY" class="">JPY</li>
-                        </ul>
-                    </div>
-                    <div class="language-dropdown">
-                        <span class="language-dd">English</span>
-                        <ul id="language">
-                            <li class="">German</li>
-                            <li class="">French</li>
-                        </ul>
-                    </div>
-                    <p class="phone-no"><i class="anm anm-phone-s"></i> +440 0(111) 044 833</p>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">
-                	<div class="text-center"><p class="top-header_middle-text"> Worldwide Express Shipping</p></div>
-                </div>
-                <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
-                	<span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
-                    <ul class="customer-links list-inline">
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Create Account</a></li>
-                        <li><a href="wishlist.html">Wishlist</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Top Header-->
+
+
     <!--Header-->
     <div class="header-wrap animated d-flex">
     	<div class="container-fluid">        
             <div class="row align-items-center">
             	<!--Desktop Logo-->
                 <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                    <a href="index.html">
+                    <a href="index.php">
                     	<img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                     </a>
                 </div>
@@ -100,7 +38,7 @@
                                             <ul class="grid">
                                                 <li class="grid__item lvl-1 col-md-3 col-lg-3"><a href="#" class="site-nav lvl-1">Home Group 1</a>
                                                     <ul class="subLinks">
-                                                      <li class="lvl-2"><a href="index.html" class="site-nav lvl-2">Home 1 - Classic</a></li>
+                                                      <li class="lvl-2"><a href="index.php" class="site-nav lvl-2">Home 1 - Classic</a></li>
                                                       <li class="lvl-2"><a href="home2-default.html" class="site-nav lvl-2">Home 2 - Default</a></li>
                                                       <li class="lvl-2"><a href="home15-funiture.html" class="site-nav lvl-2">Home 15 - Furniture <span class="lbl nm_label1">New</span></a></li>
                                                       <li class="lvl-2"><a href="home3-boxed.html" class="site-nav lvl-2">Home 3 - Boxed</a></li>
@@ -160,7 +98,7 @@
                                                 <li class="lvl-2"><a href="shop-grid-5.html" class="site-nav lvl-2">5 items per row</a></li>
                                                 <li class="lvl-2"><a href="shop-grid-6.html" class="site-nav lvl-2">6 items per row</a></li>
                                                 <li class="lvl-2"><a href="shop-grid-7.html" class="site-nav lvl-2">7 items per row</a></li>
-                                                <li class="lvl-2"><a href="shop-listview.html" class="site-nav lvl-2">Product Listview</a></li>
+                                                <li class="lvl-2"><a href="shop-listview.php" class="site-nav lvl-2">Product Listview</a></li>
                                             </ul>
                                       	</li>
                                       	<li class="grid__item lvl-1 col-md-3 col-lg-3"><a href="#" class="site-nav lvl-1">Shop Features</a>
@@ -199,7 +137,7 @@
                                             </li>
                                             <li class="grid__item lvl-1 col-md-3 col-lg-3"><a href="#" class="site-nav lvl-1">Product Features</a>
                                                     <ul class="subLinks">
-                                                      <li class="lvl-2"><a href="short-description.html" class="site-nav lvl-2">Short Description</a></li>
+                                                      <li class="lvl-2"><a href="short-description.php" class="site-nav lvl-2">Short Description</a></li>
                                                       <li class="lvl-2"><a href="product-countdown.html" class="site-nav lvl-2">Product Countdown</a></li>
                                                       <li class="lvl-2"><a href="product-video.html" class="site-nav lvl-2">Product Video</a></li>
                                                       <li class="lvl-2"><a href="product-quantity-message.html" class="site-nav lvl-2">Product Quantity Message</a></li>
@@ -247,17 +185,17 @@
                                         <li><a href="compare-variant2.html" class="site-nav">Compare Variant2</a></li>
                                      </ul>
                                 </li>
-								<li><a href="checkout.html" class="site-nav">Checkout</a></li>
-                                <li><a href="about-us.html" class="site-nav">About Us <span class="lbl nm_label1">New</span> </a></li>
-                                <li><a href="contact-us.html" class="site-nav">Contact Us</a></li>
-                                <li><a href="faqs.html" class="site-nav">FAQs</a></li>
+								<li><a href="checkout.php" class="site-nav">Checkout</a></li>
+                                <li><a href="about-us.php" class="site-nav">About Us <span class="lbl nm_label1">New</span> </a></li>
+                                <li><a href="contact-us.php" class="site-nav">Contact Us</a></li>
+                                <li><a href="faqs.php" class="site-nav">FAQs</a></li>
                                 <li><a href="lookbook1.html" class="site-nav">Lookbook<i class="anm anm-angle-right-l"></i></a>
                                   <ul>
                                     <li><a href="lookbook1.html" class="site-nav">Style 1</a></li>
                                     <li><a href="lookbook2.html" class="site-nav">Style 2</a></li>
                                   </ul>
                                 </li>
-                                <li><a href="404.html" class="site-nav">404</a></li>
+                                <li><a href="404.php" class="site-nav">404</a></li>
                                 <li><a href="coming-soon.html" class="site-nav">Coming soon <span class="lbl nm_label1">New</span> </a></li>
                               </ul>
                             </li>
@@ -266,8 +204,8 @@
                             <li><a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a></li>
                             <li><a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a></li>
                             <li><a href="blog-fullwidth.html" class="site-nav">Fullwidth</a></li>
-                            <li><a href="blog-grid-view.html" class="site-nav">Gridview</a></li>
-                            <li><a href="blog-article.html" class="site-nav">Article</a></li>
+                            <li><a href="blog-grid-view.php" class="site-nav">Gridview</a></li>
+                            <li><a href="blog-article.php" class="site-nav">Article</a></li>
                           </ul>
                         </li>
                         <li class="lvl1"><a href="#"><b>Buy Now!</b></a></li>
@@ -277,7 +215,7 @@
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                 	<div class="logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                         </a>
                     </div>
@@ -298,7 +236,7 @@
                                     <div class="product-details">
                                     	<a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
                                         <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                        <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                        <a class="pName" href="cart.php">Sleeve Kimono Dress</a>
                                         <div class="variant-cart">Black / XL</div>
                                         <div class="wrapQtyBtn">
                                             <div class="qtyField">
@@ -322,7 +260,7 @@
                                     <div class="product-details">
                                     	<a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
                                         <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                        <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                        <a class="pName" href="cart.php">Elastic Waist Dress</a>
                                         <div class="variant-cart">Gray / XXL</div>
                                         <div class="wrapQtyBtn">
                                             <div class="qtyField">
@@ -345,8 +283,8 @@
                                 	<span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
                                 </div>
                                  <div class="buttonSet text-center">
-                                    <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                    <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                    <a href="cart.php" class="btn btn-secondary btn--small">View Cart</a>
+                                    <a href="checkout.php" class="btn btn-secondary btn--small">Checkout</a>
                                 </div>
                             </div>
                         </div>
@@ -364,11 +302,11 @@
     <div class="mobile-nav-wrapper" role="navigation">
 		<div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
         <ul id="MobileNav" class="mobile-nav">
-        	<li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+        	<li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-plus-l"></i></a>
           <ul>
             <li><a href="#" class="site-nav">Home Group 1<i class="anm anm-plus-l"></i></a>
               <ul>
-                <li><a href="index.html" class="site-nav">Home 1 - Classic</a></li>
+                <li><a href="index.php" class="site-nav">Home 1 - Classic</a></li>
                 <li><a href="home2-default.html" class="site-nav">Home 2 - Default</a></li>
                 <li><a href="home15-funiture.html" class="site-nav">Home 15 - Furniture </a></li>
                 <li><a href="home3-boxed.html" class="site-nav">Home 3 - Boxed</a></li>
@@ -424,7 +362,7 @@
                 <li><a href="shop-grid-5.html" class="site-nav">5 items per row</a></li>
                 <li><a href="shop-grid-6.html" class="site-nav">6 items per row</a></li>
                 <li><a href="shop-grid-7.html" class="site-nav">7 items per row</a></li>
-                <li><a href="shop-listview.html" class="site-nav last">Product Listview</a></li>
+                <li><a href="shop-listview.php" class="site-nav last">Product Listview</a></li>
               </ul>
             </li>
             <li><a href="#" class="site-nav">Shop Features<i class="anm anm-plus-l"></i></a>
@@ -454,9 +392,9 @@
                 <li><a href="product-with-bottom-thumbs.html" class="site-nav last">Product With Bottom Thumbs</a></li>
               </ul>
             </li>
-            <li><a href="short-description.html" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
+            <li><a href="short-description.php" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
               <ul>
-                <li><a href="short-description.html" class="site-nav">Short Description</a></li>
+                <li><a href="short-description.php" class="site-nav">Short Description</a></li>
                 <li><a href="product-countdown.html" class="site-nav">Product Countdown</a></li>
                 <li><a href="product-video.html" class="site-nav">Product Video</a></li>
                 <li><a href="product-quantity-message.html" class="site-nav">Product Quantity Message</a></li>
@@ -486,7 +424,7 @@
             </li>
           </ul>
         </li>
-        	<li class="lvl1 parent megamenu"><a href="about-us.html">Pages <i class="anm anm-plus-l"></i></a>
+        	<li class="lvl1 parent megamenu"><a href="about-us.php">Pages <i class="anm anm-plus-l"></i></a>
           <ul>
           	<li><a href="cart-variant1.html" class="site-nav">Cart Page <i class="anm anm-plus-l"></i></a>
                 <ul class="dropdown">
@@ -500,17 +438,17 @@
                     <li><a href="compare-variant2.html" class="site-nav">Compare Variant2</a></li>
                  </ul>
             </li>
-			<li><a href="checkout.html" class="site-nav">Checkout</a></li>
-            <li><a href="about-us.html" class="site-nav">About Us<span class="lbl nm_label1">New</span></a></li>
-            <li><a href="contact-us.html" class="site-nav">Contact Us</a></li>
-            <li><a href="faqs.html" class="site-nav">FAQs</a></li>
+			<li><a href="checkout.php" class="site-nav">Checkout</a></li>
+            <li><a href="about-us.php" class="site-nav">About Us<span class="lbl nm_label1">New</span></a></li>
+            <li><a href="contact-us.php" class="site-nav">Contact Us</a></li>
+            <li><a href="faqs.php" class="site-nav">FAQs</a></li>
             <li><a href="lookbook1.html" class="site-nav">Lookbook<i class="anm anm-plus-l"></i></a>
               <ul>
                 <li><a href="lookbook1.html" class="site-nav">Style 1</a></li>
                 <li><a href="lookbook2.html" class="site-nav last">Style 2</a></li>
               </ul>
             </li>
-            <li><a href="404.html" class="site-nav">404</a></li>
+            <li><a href="404.php" class="site-nav">404</a></li>
             <li><a href="coming-soon.html" class="site-nav">Coming soon<span class="lbl nm_label1">New</span></a></li>
           </ul>
         </li>
@@ -519,8 +457,8 @@
             <li><a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a></li>
             <li><a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a></li>
             <li><a href="blog-fullwidth.html" class="site-nav">Fullwidth</a></li>
-            <li><a href="blog-grid-view.html" class="site-nav">Gridview</a></li>
-            <li><a href="blog-article.html" class="site-nav">Article</a></li>
+            <li><a href="blog-grid-view.php" class="site-nav">Gridview</a></li>
+            <li><a href="blog-article.php" class="site-nav">Article</a></li>
           </ul>
         </li>
         	<li class="lvl1"><a href="#"><b>Buy Now!</b></a>
@@ -674,5 +612,5 @@
 </div>
 </body>
 
-<!-- belle/404.html   11 Nov 2019 12:45:12 GMT -->
+<!-- belle/404.php   11 Nov 2019 12:45:12 GMT -->
 </html>

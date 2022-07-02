@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/blog-article.html   11 Nov 2019 12:47:01 GMT -->
+<!-- belle/blog-grid-view.php   11 Nov 2019 12:46:09 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Blog Article &ndash; Belle Multipurpose Bootstrap 4 Template</title>
+    <title>Blog Gridview &ndash; Belle Multipurpose Bootstrap 4 Template</title>
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -63,9 +63,9 @@
                     <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                         <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                         <ul class="customer-links list-inline">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Create Account</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">Create Account</a></li>
+                            <li><a href="wishlist.php">Wishlist</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="row align-items-center">
                     <!--Desktop Logo-->
                     <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                         </a>
                     </div>
@@ -86,30 +86,30 @@
                     <div class="col-2 col-sm-3 col-md-3 col-lg-8">
                         <div class="d-block d-lg-none">
                             <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
-                  <i class="icon anm anm-times-l"></i>
-                    <i class="anm anm-bars-r"></i>
-                </button>
+                <i class="icon anm anm-times-l"></i>
+                  <i class="anm anm-bars-r"></i>
+              </button>
                         </div>
                         <!--Desktop Menu-->
                         <nav class="grid__item" id="AccessibleNav">
                             <!-- for mobile -->
                             <ul id="siteNav" class="site-nav medium center hidearrow">
-                                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
-                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.html">Blog <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.php">Blog <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
                             </ul>
                         </nav>
                         <!--End Desktop Menu-->
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                             </a>
                         </div>
@@ -130,7 +130,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                            <a class="pName" href="cart.php">Sleeve Kimono Dress</a>
                                             <div class="variant-cart">Black / XL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -154,7 +154,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                            <a class="pName" href="cart.php">Elastic Waist Dress</a>
                                             <div class="variant-cart">Gray / XXL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -177,8 +177,8 @@
                                         <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
                                     </div>
                                     <div class="buttonSet text-center">
-                                        <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                        <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                        <a href="cart.php" class="btn btn-secondary btn--small">View Cart</a>
+                                        <a href="checkout.php" class="btn btn-secondary btn--small">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -196,15 +196,15 @@
         <div class="mobile-nav-wrapper" role="navigation">
             <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
             <ul id="MobileNav" class="mobile-nav">
-                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-plus-l"></i></a>
                 </li>
 
-                <li class="lvl1 parent megamenu"><a href="blog-grid-view.html">Blog <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="blog-grid-view.php">Blog <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
             </ul>
         </div>
         <!--End Mobile Menu-->
@@ -215,115 +215,18 @@
             <div class="page section-header text-center mb-0">
                 <div class="page-title">
                     <div class="wrapper">
-                        <h1 class="page-width">Blog Article</h1>
+                        <h1 class="page-width">Blog Gridview</h1>
                     </div>
                 </div>
             </div>
             <!--End Page Title-->
             <div class="bredcrumbWrap">
                 <div class="container breadcrumbs">
-                    <a href="index.html" title="Back to the home page">Home</a><span aria-hidden="true">›</span>
-                    <a href="blog-left-sidebar.html" title="Back to News">News</a><span aria-hidden="true">›</span><span>Blog Article</span>
+                    <a href="index.php" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span>Blog Gridview</span>
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <!--Main Content-->
-                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
-                        <div class="blog--list-view">
-                            <div class="article">
-                                <!-- Article Image -->
-                                <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-1.jpg" src="assets/images/blog/blog-post-1.jpg" alt="It's all about how you wear"></a>
-                                <h1><a href="blog-left-sidebar.html">It's all about how you wear</a></h1>
-                                <ul class="publish-detail">
-                                    <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
-                                    <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
-                                    <li>
-                                        <ul class="inline-list">
-                                            <li><i class="icon anm anm-comments-l"></i> <a href="#"> 0 comments</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <div class="rte">
-                                    <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique
-                                        comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de.</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <h3>Sample Text Listing</h3>
-                                    <ul class="list-items">
-                                        <li>Donec et lacus mattis ipsum feugiat interdum non id sapien.</li>
-                                        <li>Quisque et mauris eget nisi vestibulum rhoncus molestie a ante.</li>
-                                        <li>Curabitur pulvinar ex at tempus sodales.</li>
-                                        <li>Mauris efficitur magna quis lectus lobortis venenatis.</li>
-                                        <li>Nunc id enim eget augue molestie lobortis in a purus.</li>
-                                    </ul>
-                                    <h3>Donec maximus quam at lectus bibendum, non suscipit nunc tristique.</h3>
-                                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
-                                        form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                </div>
-                                <hr/>
-                                <div class="social-sharing">
-                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-facebook" title="Share on Facebook">
-                                        <i class="fa fa-facebook-square" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Share</span>
-                                    </a>
-                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-twitter" title="Tweet on Twitter">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Tweet</span>
-                                    </a>
-                                    <a href="#" title="Share on google+" class="btn btn--small btn--secondary btn--share">
-                                        <i class="fa fa-google-plus" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Google+</span>
-                                    </a>
-                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Pin on Pinterest">
-                                        <i class="fa fa-pinterest" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Pin it</span>
-                                    </a>
-                                    <a href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Share by Email" target="_blank">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Email</span>
-                                    </a>
-                                </div>
-                                <div class="blog-nav">
-                                    <div class="text-left">
-                                        <i class="icon icon-arrow-circle-left"></i>
-                                        <a href="#" title="">Previous</a>
-                                    </div>
-                                    <div class="text-right">
-                                        <a href="#" title="">Next</a>
-                                        <i class="icon icon-arrow-circle-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="formFeilds contact-form form-vertical">
-                                <form method="post" action="#" id="comment_form" accept-charset="UTF-8" class="comment-form">
-                                    <h2>Leave a comment</h2>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" id="ContactFormName" name="contact[name]" placeholder="Name" value="" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" id="ContactFormEmail" name="contact[email]" placeholder="Email" value="" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <textarea required="" rows="10" id="ContactFormMessage" name="contact[body]" placeholder="Your Message"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                            <p class="fine-print">Please note, comments must be approved before they are published</p>
-                                            <input type="submit" class="btn" value="Send Message">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Main Content-->
                     <!--Sidebar-->
                     <div class="col-12 col-sm-12 col-md-3 col-lg-3 sidebar">
                         <div class="sidebar_tags">
@@ -394,12 +297,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sidebar_widget static-banner">
-                                <img src="assets/images/side-banner-2.jpg" alt="">
-                            </div>
                             <div class="sidebar_widget">
                                 <div class="widget-title">
-                                    <h2>Trending Now</h2>
+                                    <h2>Recent Comments</h2>
                                 </div>
                                 <div class="widget-content">
                                     <div class="list list-sidebar-products">
@@ -408,45 +308,45 @@
                                                 <div class="mini-list-item">
                                                     <div class="mini-view_image">
                                                         <a class="grid-view-item__link" href="#">
-                                                            <img class="grid-view-item__image blur-up lazyload" data-src="assets/images/product-images/mini-product-img.jpg" src="assets/images/product-images/mini-product-img.jpg" alt="" />
+                                                            <img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" />
                                                         </a>
                                                     </div>
-                                                    <div class="details"> <a class="grid-view-item__title" href="#">Cena Skirt</a>
-                                                        <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$173.60</span></span>
-                                                        </div>
+                                                    <div class="details">
+                                                        <div class="grid-view-item__meta"><strong>Tim</strong> On <a href="#">Lorem Ipsum</a></div>
+                                                        <a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="grid__item">
                                                 <div class="mini-list-item">
                                                     <div class="mini-view_image">
-                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/product-images/mini-product-img1.jpg" src="assets/images/product-images/mini-product-img1.jpg" alt="" /></a>
+                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a>
                                                     </div>
-                                                    <div class="details"> <a class="grid-view-item__title" href="#">Block Button Up</a>
-                                                        <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$378.00</span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid__item">
-                                                <div class="mini-list-item">
-                                                    <div class="mini-view_image">
-                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/product-images/mini-product-img2.jpg" src="assets/images/product-images/mini-product-img2.jpg" alt="" /></a>
-                                                    </div>
-                                                    <div class="details"> <a class="grid-view-item__title" href="#">Balda Button Pant</a>
-                                                        <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$278.60</span></span>
-                                                        </div>
+                                                    <div class="details">
+                                                        <div class="grid-view-item__meta"><strong>Joy</strong> On <a href="#">Lorem Ipsum</a></div>
+                                                        <a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="grid__item">
                                                 <div class="mini-list-item">
                                                     <div class="mini-view_image">
-                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/product-images/mini-product-img3.jpg" src="assets/images/product-images/mini-product-img3.jpg" alt="" /></a>
+                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a>
                                                     </div>
-                                                    <div class="details"> <a class="grid-view-item__title" href="#">Border Dress in Black/Silver</a>
-                                                        <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$228.00</span></span>
-                                                        </div>
+                                                    <div class="details">
+                                                        <div class="grid-view-item__meta"><strong>Jhon</strong> On <a href="#">Lorem Ipsum</a></div>
+                                                        <a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid__item">
+                                                <div class="mini-list-item">
+                                                    <div class="mini-view_image">
+                                                        <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <div class="grid-view-item__meta"><strong>Tim</strong> On <a href="#">Lorem Ipsum</a></div>
+                                                        <a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -454,9 +354,142 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="sidebar_widget tags-clouds">
+                                <div class="widget-title">
+                                    <h2>Tags Cloud</h2>
+                                </div>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Clothes</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Furniture</a></li>
+                                        <li><a href="#">Sun Glasses</a></li>
+                                        <li><a href="#">Winter</a></li>
+                                        <li><a href="#">Autoparts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--End Sidebar-->
+                    <!--Main Content-->
+                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
+                        <div class="custom-search">
+                            <form action="http://annimexweb.com/search" method="get" class="input-group search-header search" role="search" style="position: relative;">
+                                <input class="search-header__input search__input input-group__field" type="search" name="q" placeholder="Search" aria-label="Search" autocomplete="off">
+                                <span class="input-group__btn"><button class="btnSearch" type="submit"> <i class="icon anm anm-search-l"></i> </button></span>
+                            </form>
+                        </div>
+                        <div class="blog--list-view">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-1.jpg" src="assets/images/blog/blog-post-1.jpg" alt="It's all about how you wear"></a>
+                                    <h2 class="h3"><a href="blog-left-sidebar.html">It's all about how you wear</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la m... </p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-2.jpg" src="assets/images/blog/blog-post-2.jpg" alt="27 Days of Spring Fashion Recap"></a>
+                                    <h2 class="h3"><a href="blog-right-sidebar.html">27 Days of Spring Fashion Recap</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la m... </p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-3.jpg" src="assets/images/blog/blog-post-3.jpg" alt="How to Wear The Folds Trend Four Ways"></a>
+                                    <h2 class="h3"><a href="#">How to Wear The Folds Trend Four Ways</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la m... </p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-4.jpg" src="assets/images/blog/blog-post-4.jpg" alt="Accusantium doloremque"></a>
+                                    <h2 class="h3"><a href="#">Accusantium doloremque</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la m... </p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-5.jpg" src="assets/images/blog/blog-post-5.jpg" alt=""></a>
+                                    <h2 class="h3"><a href="#">Neque porro quisquam est</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-6.jpg" src="assets/images/blog/blog-post-6.jpg" alt=""></a>
+                                    <h2 class="h3"><a href="#">Contrary to popular belief</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 article">
+                                    <!-- Article Image -->
+                                    <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-7.jpg" src="assets/images/blog/blog-post-7.jpg" alt=""></a>
+                                    <h2 class="h3"><a href="#">The standard chunk of Lorem</a></h2>
+                                    <ul class="publish-detail">
+                                        <li><i class="anm anm-user-al" aria-hidden="true"></i> User</li>
+                                        <li><i class="icon anm anm-clock-r"></i> <time datetime="2017-05-02">May 02, 2017</time></li>
+                                    </ul>
+                                    <div class="rte">
+                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum</p>
+                                    </div>
+                                    <p><a href="#" class="btn btn-secondary btn--small">Read more <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="pagination">
+                                <ul>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="next"><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Main Content-->
                 </div>
             </div>
 
@@ -595,6 +628,6 @@
     </div>
 </body>
 
-<!-- belle/blog-article.html   11 Nov 2019 12:47:01 GMT -->
+<!-- belle/blog-grid-view.php   11 Nov 2019 12:47:01 GMT -->
 
 </html>

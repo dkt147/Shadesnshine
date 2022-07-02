@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/login.html   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,9 +63,9 @@
                     <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                         <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                         <ul class="customer-links list-inline">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Create Account</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">Create Account</a></li>
+                            <li><a href="wishlist.php">Wishlist</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="row align-items-center">
                     <!--Desktop Logo-->
                     <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                         </a>
                     </div>
@@ -94,22 +94,22 @@
                         <nav class="grid__item" id="AccessibleNav">
                             <!-- for mobile -->
                             <ul id="siteNav" class="site-nav medium center hidearrow">
-                                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
-                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.html">Blog <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.php">Blog <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
                             </ul>
                         </nav>
                         <!--End Desktop Menu-->
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                             </a>
                         </div>
@@ -130,7 +130,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                            <a class="pName" href="cart.php">Sleeve Kimono Dress</a>
                                             <div class="variant-cart">Black / XL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -154,7 +154,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                            <a class="pName" href="cart.php">Elastic Waist Dress</a>
                                             <div class="variant-cart">Gray / XXL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -177,8 +177,8 @@
                                         <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
                                     </div>
                                     <div class="buttonSet text-center">
-                                        <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                        <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                        <a href="cart.php" class="btn btn-secondary btn--small">View Cart</a>
+                                        <a href="checkout.php" class="btn btn-secondary btn--small">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -196,15 +196,15 @@
         <div class="mobile-nav-wrapper" role="navigation">
             <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
             <ul id="MobileNav" class="mobile-nav">
-                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-plus-l"></i></a>
                 </li>
 
-                <li class="lvl1 parent megamenu"><a href="blog-grid-view.html">Blog <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="blog-grid-view.php">Blog <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
             </ul>
         </div>
         <!--End Mobile Menu-->
@@ -245,7 +245,7 @@
                                         <input type="submit" class="btn mb-3" value="Sign In">
                                         <p class="mb-4">
                                             <a href="#" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
-                                            <a href="register.html" id="customer_register_link">Create account</a>
+                                            <a href="register.php" id="customer_register_link">Create account</a>
                                         </p>
                                     </div>
                                 </div>
@@ -390,6 +390,6 @@
     </div>
 </body>
 
-<!-- belle/login.html   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
 
 </html>

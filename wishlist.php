@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/cart.html   11 Nov 2019 12:47:01 GMT -->
+<!-- belle/wishlist.php   11 Nov 2019 12:22:27 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Your cart &ndash; Belle Multipurpose Bootstrap 4 Template</title>
+    <title>Wishlist &ndash; Belle Multipurpose Bootstrap 4 Template</title>
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
@@ -63,9 +63,9 @@
                     <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                         <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                         <ul class="customer-links list-inline">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Create Account</a></li>
-                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">Create Account</a></li>
+                            <li><a href="wishlist.php">Wishlist</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="row align-items-center">
                     <!--Desktop Logo-->
                     <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                         </a>
                     </div>
@@ -86,30 +86,30 @@
                     <div class="col-2 col-sm-3 col-md-3 col-lg-8">
                         <div class="d-block d-lg-none">
                             <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
-                        <i class="icon anm anm-times-l"></i>
-                        <i class="anm anm-bars-r"></i>
-                    </button>
+                        	<i class="icon anm anm-times-l"></i>
+                            <i class="anm anm-bars-r"></i>
+                        </button>
                         </div>
                         <!--Desktop Menu-->
                         <nav class="grid__item" id="AccessibleNav">
                             <!-- for mobile -->
                             <ul id="siteNav" class="site-nav medium center hidearrow">
-                                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
-                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.html">Blog <i class="anm anm-angle-down-l"></i></a>
+                                <li class="lvl1 parent dropdown"><a href="blog-grid-view.php">Blog <i class="anm anm-angle-down-l"></i></a>
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
                             </ul>
                         </nav>
                         <!--End Desktop Menu-->
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                             </a>
                         </div>
@@ -130,7 +130,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                            <a class="pName" href="cart.php">Sleeve Kimono Dress</a>
                                             <div class="variant-cart">Black / XL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -154,7 +154,7 @@
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
 
-                                            <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                            <a class="pName" href="cart.php">Elastic Waist Dress</a>
                                             <div class="variant-cart">Gray / XXL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
@@ -177,8 +177,8 @@
                                         <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
                                     </div>
                                     <div class="buttonSet text-center">
-                                        <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                        <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                        <a href="cart.php" class="btn btn-secondary btn--small">View Cart</a>
+                                        <a href="checkout.php" class="btn btn-secondary btn--small">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -196,15 +196,15 @@
         <div class="mobile-nav-wrapper" role="navigation">
             <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
             <ul id="MobileNav" class="mobile-nav">
-                <li class="lvl1 parent megamenu"><a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="index.php">Home <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="shop.html">Shop <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="shop.php">Shop <i class="anm anm-plus-l"></i></a>
                 </li>
 
-                <li class="lvl1 parent megamenu"><a href="blog-grid-view.html">Blog <i class="anm anm-plus-l"></i></a>
+                <li class="lvl1 parent megamenu"><a href="blog-grid-view.php">Blog <i class="anm anm-plus-l"></i></a>
                 </li>
-                <li class="lvl1 parent megamenu"><a href="about-us.html">About <i class="anm anm-plus-l"></i></a>
-                    <li class="lvl1 parent megamenu"><a href="contact-us.html">Contact <i class="anm anm-plus-l"></i></a></li>
+                <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                    <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
             </ul>
         </div>
         <!--End Mobile Menu-->
@@ -215,7 +215,7 @@
             <div class="page section-header text-center">
                 <div class="page-title">
                     <div class="wrapper">
-                        <h1 class="page-width">Your cart</h1>
+                        <h1 class="page-width">Wish List</h1>
                     </div>
                 </div>
             </div>
@@ -223,125 +223,67 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 main-col">
-                        <form action="#" method="post" class="cart style2">
-                            <table>
-                                <thead class="cart__row cart__header">
-                                    <tr>
-                                        <th colspan="2" class="text-center">Product</th>
-                                        <th class="text-center">Price</th>
-                                        <th class="text-center">Quantity</th>
-                                        <th class="text-right">Total</th>
-                                        <th class="action">&nbsp;</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="cart__row border-bottom line1 cart-flex border-top">
-                                        <td class="cart__image-wrapper cart-flex-item">
-                                            <a href="#"><img class="cart__image" src="assets/images/cosmetic-products/product-image1.jpg" alt="Elastic Waist Dress - Navy / Small"></a>
-                                        </td>
-                                        <td class="cart__meta small--text-left cart-flex-item">
-                                            <div class="list-view-item__title">
-                                                <a href="#">Elastic Waist Dress </a>
-                                            </div>
-
-                                            <div class="cart__meta-text">
-                                                Color: Navy<br>Size: Small<br>
-                                            </div>
-                                        </td>
-                                        <td class="cart__price-wrapper cart-flex-item">
-                                            <span class="money">$735.00</span>
-                                        </td>
-                                        <td class="cart__update-wrapper cart-flex-item text-right">
-                                            <div class="cart__qty text-center">
-                                                <div class="qtyField">
-                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
-                                                    <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
-                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-right small--hide cart-price">
-                                            <div><span class="money">$735.00</span></div>
-                                        </td>
-                                        <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a></td>
-                                    </tr>
-                                    <tr class="cart__row border-bottom line1 cart-flex border-top">
-                                        <td class="cart__image-wrapper cart-flex-item">
-                                            <a href="#"><img class="cart__image" src="assets/images/cosmetic-products/product-image3.jpg" alt="3/4 Sleeve Kimono Dress"></a>
-                                        </td>
-                                        <td class="cart__meta small--text-left cart-flex-item">
-                                            <div class="list-view-item__title">
-                                                <a href="#">3/4 Sleeve Kimono Dress</a>
-                                            </div>
-                                        </td>
-                                        <td class="cart__price-wrapper cart-flex-item">
-                                            <span class="money">$735.00</span>
-                                        </td>
-                                        <td class="cart__update-wrapper cart-flex-item text-right">
-                                            <div class="cart__qty text-center">
-                                                <div class="qtyField">
-                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
-                                                    <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
-                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-right small--hide cart-price">
-                                            <div><span class="money">$735.00</span></div>
-                                        </td>
-                                        <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a></td>
-                                    </tr>
-                                    <tr class="cart__row border-bottom line1 cart-flex border-top">
-                                        <td class="cart__image-wrapper cart-flex-item">
-                                            <a href="#"><img class="cart__image" src="assets/images/cosmetic-products/product-image6.jpg" alt="Minerva Dress black"></a>
-                                        </td>
-                                        <td class="cart__meta small--text-left cart-flex-item">
-                                            <div class="list-view-item__title">
-                                                <a href="#">Minerva Dress black</a>
-                                            </div>
-                                        </td>
-                                        <td class="cart__price-wrapper cart-flex-item">
-                                            <span class="money">$526.00</span>
-                                        </td>
-                                        <td class="cart__update-wrapper cart-flex-item text-right">
-                                            <div class="cart__qty text-center">
-                                                <div class="qtyField">
-                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="icon icon-minus"></i></a>
-                                                    <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
-                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="icon icon-plus"></i></a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-right small--hide cart-price">
-                                            <div><span class="money">$735.00</span></div>
-                                        </td>
-                                        <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></a></td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="3" class="text-left"><a href="shop.html" class="btn  cart-continue"><i class="icon icon-arrow-circle-left"></i> Continue shopping</a></td>
-                                        <td colspan="3" class="text-right"><button type="submit" name="update" class="btn  cart-update"><i class="fa fa-refresh"></i> Update</button></td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-
-
-                        </form>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 cart__footer">
-
-                        <div class="solid-border">
-                            <div class="row">
-                                <span class="col-12 col-sm-6 cart__subtotal-title"><strong>Subtotal</strong></span>
-                                <span class="col-12 col-sm-6 cart__subtotal-title cart__subtotal text-right"><span class="money">$735.00</span></span>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col">
+                        <form action="#">
+                            <div class="wishlist-table table-content table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-name text-center alt-font">Remove</th>
+                                            <th class="product-price text-center alt-font">Images</th>
+                                            <th class="product-name alt-font">Product</th>
+                                            <th class="product-price text-center alt-font">Unit Price</th>
+                                            <th class="stock-status text-center alt-font">Stock Status</th>
+                                            <th class="product-subtotal text-center alt-font">Add to Cart</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product-remove text-center" valign="middle"><a href="#"><i class="icon icon anm anm-times-l"></i></a></td>
+                                            <td class="product-thumbnail text-center">
+                                                <a href="#"><img src="assets/images/product-images/product-image8.jpg" alt="" title="" /></a>
+                                            </td>
+                                            <td class="product-name">
+                                                <h4 class="no-margin"><a href="#">Minerva Dress black</a></h4>
+                                            </td>
+                                            <td class="product-price text-center"><span class="amount">$165.00</span></td>
+                                            <td class="stock text-center">
+                                                <span class="in-stock">in stock</span>
+                                            </td>
+                                            <td class="product-subtotal text-center"><button type="button" class="btn btn-small">Add To Cart</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-remove text-center" valign="middle"><a href="#"><i class="icon icon anm anm-times-l"></i></a></td>
+                                            <td class="product-thumbnail text-center">
+                                                <a href="#"><img src="assets/images/product-images/product-image4.jpg" alt="" title="" /></a>
+                                            </td>
+                                            <td class="product-name">
+                                                <h4 class="no-margin"><a href="#">Sueded Cotton Pant in Khaki</a></h4>
+                                            </td>
+                                            <td class="product-price text-center"><span class="amount">$150.00</span></td>
+                                            <td class="stock text-center">
+                                                <span class="out-stock">Out Of stock</span>
+                                            </td>
+                                            <td class="product-subtotal text-center"><button type="button" class="btn btn-small">Add To Cart</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="product-remove text-center" valign="middle"><a href="#"><i class="icon icon anm anm-times-l"></i></a></td>
+                                            <td class="product-thumbnail text-center">
+                                                <a href="#"><img src="assets/images/product-images/product-image5.jpg" alt="" title="" /></a>
+                                            </td>
+                                            <td class="product-name">
+                                                <h4 class="no-margin"><a href="#">Woven Solid Midi Shirt Dress</a></h4>
+                                            </td>
+                                            <td class="product-price text-center"><span class="amount">$150.00</span></td>
+                                            <td class="stock text-center">
+                                                <span class="in-stock">in stock</span>
+                                            </td>
+                                            <td class="product-subtotal text-center"><button type="button" class="btn btn-small">Add To Cart</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-
-                            <a style="margin-top: 20px;" href="checkout.html" class="btn btn--small-wide checkout">Go for checkout</a>
-
-                        </div>
-
+                        </form>
                     </div>
                 </div>
             </div>
@@ -411,7 +353,7 @@
                                             <div class="input-group">
                                                 <input type="email" class="input-group__field newsletter__input" name="EMAIL" value="" placeholder="Email address" required="">
                                                 <span class="input-group__btn">
-                                                <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe"><span class="newsletter__submit-text--large">Subscribe</span></button>
+                                            <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe"><span class="newsletter__submit-text--large">Subscribe</span></button>
                                                 </span>
                                             </div>
                                         </form>
@@ -451,6 +393,6 @@
     </div>
 </body>
 
-<!-- belle/cart.html   11 Nov 2019 12:47:01 GMT -->
+<!-- belle/wishlist.php   11 Nov 2019 12:22:27 GMT -->
 
 </html>
