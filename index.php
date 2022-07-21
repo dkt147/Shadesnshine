@@ -19,13 +19,13 @@
                 <div class="home-slideshow">
                     <div class="slide">
                         <div class="blur-up lazyload">
-                            <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home5-banner2.jpg" src="assets/images/slideshow-banners/home5-banner2.jpg" alt="Wedding bands" title="Wedding bands" />
+                            <img class="blur-up lazyload" data-src="assets/images/bann2.jpeg" src="assets/images/bann2.jpeg" alt="Wedding bands" title="Wedding bands" />
                             <div class="slideshow__text-wrap slideshow__overlay classic middle">
                                 <div class="slideshow__text-content middle">
                                     <div class="container">
                                         <div class="wrap-caption right">
-                                            <h2 class="h1 mega-title slideshow__title">Wedding bands</h2>
-                                            <span class="mega-subtitle slideshow__subtitle">Wedding bands will be one of the most tangible elements of your wedding<br> day, and a lasting symbol of your love.</span>
+                                            <h2 class="h1 mega-title slideshow__title">High Quality Products</h2>
+                                            <span class="mega-subtitle slideshow__subtitle">Authentic products at cheap rate with amazing feedbacks are here in our online store.<br> try once on our recommandation, and you will order again.</span>
                                             <span class="btn">Shop now</span>
                                         </div>
                                     </div>

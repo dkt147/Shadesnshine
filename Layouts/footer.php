@@ -70,7 +70,7 @@
             <div class="footer-bottom">
                 <div class="row">
                     <!--Footer Copyright-->
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 copyright text-center"><span>Design & Developed By: </span> <a href="https://zelektra.com/">Zelektra</a></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 copyright text-center"><span>Design & Developed By: </span> <a target="blank" href="https://www.linkedin.com/in/daniyal-khan-296b29177">Daniyal Khan</a></div>
                     <!--End Footer Copyright-->
                 </div>
             </div>
