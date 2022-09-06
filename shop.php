@@ -1,3 +1,20 @@
+<?php 
+    //Stablishing Connection...
+    include 'Admin/connection.php';      
+    //Getting Data From Databse...
+
+    if(isset($_GET['category_id'])){
+        $id = $_GET['category_id'];
+        $query = "SELECT * FROM `product` WHERE category_id = '$id' order by date asc";
+    }else{
+        $query = "SELECT * FROM `product` order by date asc";
+    }
+
+     $res = mysqli_query($con, $query);
+     $count = mysqli_num_rows($res);
+
+        ?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -40,74 +57,52 @@
                                 <div class="widget-content">
                                     <ul class="sidebar_categories">
 
-                                        <li class="level1 sub-level"><a href="#;" class="site-nav">Jewellery</a>
-                                            <ul class="sublinks">
-                                                <li class="level2"><a href="#;" class="site-nav">Ring</a></li>
-                                                <li class="level2"><a href="#;" class="site-nav">Neckalses</a></li>
-                                                <li class="level2"><a href="#;" class="site-nav">Eaarings</a></li>
-                                                <li class="level2"><a href="#;" class="site-nav">View All Jewellery</a></li>
-                                            </ul>
+                                    <?php
+                                //Stablishing Connection...
+                                include 'Admin/connection.php';      
+                              //Getting Data From Databse...
+                                  $query = "SELECT * FROM `store` order by date asc";
+                                  $res = mysqli_query($con, $query);
+            
+                                  if (mysqli_num_rows($res) > 0) {
+                                    while ($row = mysqli_fetch_assoc($res)) {
+                                  ?>
+                                        <li class="level1 sub-level"><a class="site-nav"><?php echo $row['name']?></a>
+                                        <ul class="sublinks">
+
+                                        <?php
+                                  $id = $row['id'];
+                                 //Getting Data From Databse...
+                                  $query1 = "SELECT * FROM `product_category`  where store_id = '$id' order by date asc";
+                                  $res1 = mysqli_query($con, $query1);
+            
+                                  if (mysqli_num_rows($res1) > 0) {
+                                    while ($row1 = mysqli_fetch_assoc($res1)) {
+                                  ?>
+                                                <li class="level2"><a href="shop.php?category_id=<?php echo $row1['id'] ?>" class="site-nav"><?php echo $row1['name']?></a></li>
+                                            
+                                            <?php
+                        }
+                      }?>
+                                             </ul>
+                        <?php 
+                        }
+                      }
+                      ?>
+                                          
                                         </li>
-                                        <li class="lvl-1"><a href="#;" class="site-nav">Collections</a></li>
-                                        <li class="lvl-1"><a href="#;" class="site-nav">Sale</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <!--Categories-->
-                            <!--Price Filter-->
-                            <div class="sidebar_widget filterBox filter-widget">
-                                <div class="widget-title">
-                                    <h2>Price</h2>
-                                </div>
-                                <form action="#" method="post" class="price-filter">
-                                    <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-                                        <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                        <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <p class="no-margin"><input id="amount" type="text"></p>
-                                        </div>
-                                        <div class="col-6 text-right margin-25px-top">
-                                            <button class="btn btn-secondary btn--small">filter</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <!--End Price Filter-->
 
-                            <!--Brand-->
-                            <div class="sidebar_widget filterBox filter-widget">
-                                <div class="widget-title">
-                                    <h2>Brands</h2>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <input type="checkbox" value="allen-vela" id="check1">
-                                        <label for="check1"><span><span></span></span>Allen Vela</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="oxymat" id="check3">
-                                        <label for="check3"><span><span></span></span>Oxymat</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="vanelas" id="check4">
-                                        <label for="check4"><span><span></span></span>Vanelas</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="pagini" id="check5">
-                                        <label for="check5"><span><span></span></span>Pagini</label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" value="monark" id="check6">
-                                        <label for="check6"><span><span></span></span>Monark</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--End Brand-->
+                          
+
+
+
+
                             <!--Popular Products-->
-                            <div class="sidebar_widget">
+                            <!-- <div class="sidebar_widget">
                                 <div class="widget-title">
                                     <h2>Popular Products</h2>
                                 </div>
@@ -163,13 +158,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--End Popular Products-->
-                            <!--Banner-->
-                            <!-- <div class="sidebar_widget static-banner">
-                                <img src="assets/images/side-banner-2.jpg" alt="" />
                             </div> -->
-                            <!--Banner-->
+                            <!--End Popular Products-->
+
 
 
                         </div>
@@ -188,18 +179,11 @@
                             <div class="toolbar">
                                 <div class="filters-toolbar-wrapper">
                                     <div class="row">
-                                        <div class="col-4 col-md-4 col-lg-4 filters-toolbar__item collection-view-as d-flex justify-content-start align-items-center">
-                                            <a href="shop.php" title="Grid View" class="change-view change-view--active">
-                                                <img src="assets/images/grid.jpg" alt="Grid" />
-                                            </a>
-                                            <a href="shop-listview.php" title="List View" class="change-view">
-                                                <img src="assets/images/list.jpg" alt="List" />
-                                            </a>
+                                        
+                                        <div class="col-4 col-md-4 col-lg-4">
+                                            <span class="filters-toolbar__product-count">Showing: <?php echo $count?> Product</span>
                                         </div>
-                                        <div class="col-4 col-md-4 col-lg-4 text-center filters-toolbar__item filters-toolbar__item--count d-flex justify-content-center align-items-center">
-                                            <span class="filters-toolbar__product-count">Showing: 22</span>
-                                        </div>
-                                        <div class="col-4 col-md-4 col-lg-4 text-right">
+                                        <!-- <div class="col-4 col-md-4 col-lg-4 text-right">
                                             <div class="filters-toolbar__item">
                                                 <label for="SortBy" class="hidden">Sort</label>
                                                 <select name="SortBy" id="SortBy" class="filters-toolbar__input filters-toolbar__input--sort">
@@ -214,7 +198,7 @@
                                       		</select>
                                                 <input class="collection-header__default-sort" type="hidden" value="manual">
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                     </div>
                                 </div>
@@ -223,40 +207,44 @@
                             <div class="grid-products grid--view-items">
                                 <div class="row">
 
+                                
+                    <?php
+                   
+                   //Stablishing Connection...
+                   include 'Admin/connection.php';      
+                              //Getting Data From Databse...
+
+                                  if(isset($_GET['category_id'])){
+                                        $id = $_GET['category_id'];
+                                        $query = "SELECT * FROM `product` WHERE category_id = '$id' order by date asc";
+                                    }else{
+                                        $query = "SELECT * FROM `product` order by date asc";
+                                    }
+                                  $res = mysqli_query($con, $query);
+        
+                                  if (mysqli_num_rows($res) > 0) {
+                                    while ($row = mysqli_fetch_assoc($res)) {
+                                  ?>
+
                                     <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
                                         <!-- start product image -->
                                         <div class="product-image">
                                             <!-- start product image -->
                                             <a href="#">
                                                 <!-- image -->
-                                                <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image1.jpg" src="assets/images/cosmetic-products/product-image1.jpg" alt="image" title="product" />
+                                                <img class="primary blur-up lazyload" data-src="Admin/Admin/uploads/<?php echo $row['product_image'] ?>" src="Admin/Admin/uploads/<?php echo $row['product_image'] ?>" alt="image" title="product" />
                                                 <!-- End image -->
                                                 <!-- Hover image -->
-                                                <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image1-1.jpg" src="assets/images/cosmetic-products/product-image1-1.jpg" alt="image" title="product" />
+                                                <img class="hover blur-up lazyload" data-src="Admin/Admin/uploads/<?php echo $row['product_image'] ?>" src="Admin/Admin/uploads/<?php echo $row['product_image'] ?>" alt="image" title="product" />
                                                 <!-- End hover image -->
                                             </a>
                                             <!-- end product image -->
 
                                             <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                                <button class="btn btn-addto-cart" type="button">Add to cart</button>
+                                            <form class="variants add" onclick="window.location.href='short-description.php?id=<?php echo $row['id'] ?>'" method="post">
+                                                <button class="btn btn-addto-cart" type="button">See Detail</button>
                                             </form>
-                                            <div class="button-set">
-                                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                    <i class="icon anm anm-search-plus-r"></i>
-                                                </a>
-                                                <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                                        <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!-- end product button -->
+                                                                                      <!-- end product button -->
                                         </div>
                                         <!-- end product image -->
 
@@ -264,313 +252,27 @@
                                         <div class="product-details text-center">
                                             <!-- product name -->
                                             <div class="product-name">
-                                                <a href="#">ACB Top</a>
+                                                <a href="#"><?php echo $row['name'] ?></a>
                                             </div>
                                             <!-- End product name -->
                                             <!-- product price -->
                                             <div class="product-price">
-                                                <span class="price">$280.00</span>
+                                                <span class="price">Rs.<?php echo $row['price'] ?></span>
                                             </div>
                                             <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
                                         </div>
                                         <!-- End product details -->
                                     </div>
-                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
-                                        <!-- start product image -->
-                                        <div class="product-image">
-                                            <!-- start product image -->
-                                            <a href="#">
-                                                <!-- image -->
-                                                <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image2.jpg" src="assets/images/cosmetic-products/product-image2.jpg" alt="image" title="product" />
-                                                <!-- End image -->
-                                                <!-- Hover image -->
-                                                <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image2-1.jpg" src="assets/images/cosmetic-products/product-image2-1.jpg" alt="image" title="product" />
-                                                <!-- End hover image -->
-                                            </a>
-                                            <!-- end product image -->
-
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                                <button class="btn btn-addto-cart" type="button">Add to cart</button>
-                                            </form>
-                                            <div class="button-set">
-                                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                    <i class="icon anm anm-search-plus-r"></i>
-                                                </a>
-                                                <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                                        <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!-- end product button -->
-                                        </div>
-                                        <!-- end product image -->
-
-                                        <!--start product details -->
-                                        <div class="product-details text-center">
-                                            <!-- product name -->
-                                            <div class="product-name">
-                                                <a href="#">A-Line Jacket</a>
-                                            </div>
-                                            <!-- End product name -->
-                                            <!-- product price -->
-                                            <div class="product-price">
-                                                <span class="price">$698.60</span>
-                                            </div>
-                                            <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <!-- End product details -->
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 item grid-view-item--sold-out">
-                                        <!-- start product image -->
-                                        <div class="product-image">
-                                            <!-- start product image -->
-                                            <a href="#">
-                                                <!-- image -->
-                                                <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image3.jpg" src="assets/images/cosmetic-products/product-image3.jpg" alt="image" title="product" />
-                                                <!-- End image -->
-                                                <!-- Hover image -->
-                                                <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image3-1.jpg" src="assets/images/cosmetic-products/product-image3-1.jpg" alt="image" title="product" />
-                                                <!-- End hover image -->
-                                                <span class="sold-out"><span>Sold out</span></span>
-                                            </a>
-                                        </div>
-                                        <!-- end product image -->
-
-                                        <!--start product details -->
-                                        <div class="product-details text-center">
-                                            <!-- product name -->
-                                            <div class="product-name">
-                                                <a href="#">Camelia Reversible Jacket in Navy/Blue</a>
-                                            </div>
-                                            <!-- End product name -->
-                                            <!-- product price -->
-                                            <div class="product-price">
-                                                <span class="price">$488.00</span>
-                                            </div>
-                                            <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <!-- End product details -->
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
-                                        <!-- start product image -->
-                                        <div class="product-image">
-                                            <!-- start product image -->
-                                            <a href="#">
-                                                <!-- image -->
-                                                <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image4.jpg" src="assets/images/cosmetic-products/product-image4.jpg" alt="image" title="product" />
-                                                <!-- End image -->
-                                                <!-- Hover image -->
-                                                <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image4-1.jpg" src="assets/images/cosmetic-products/product-image4-1.jpg" alt="image" title="product" />
-                                                <!-- End hover image -->
-                                            </a>
-                                            <!-- end product image -->
-
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                                <button class="btn btn-addto-cart" type="button">Add to cart</button>
-                                            </form>
-                                            <div class="button-set">
-                                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                    <i class="icon anm anm-search-plus-r"></i>
-                                                </a>
-                                                <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                                        <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!-- end product button -->
-                                        </div>
-                                        <!-- end product image -->
-
-                                        <!--start product details -->
-                                        <div class="product-details text-center">
-                                            <!-- product name -->
-                                            <div class="product-name">
-                                                <a href="#">Wrinkled Tux Shirt in Navy</a>
-                                            </div>
-                                            <!-- End product name -->
-                                            <!-- product price -->
-                                            <div class="product-price">
-                                                <span class="price">$158.00</span>
-                                            </div>
-                                            <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <!-- End product details -->
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
-                                        <!-- start product image -->
-                                        <div class="product-image">
-                                            <!-- start product image -->
-                                            <a href="#">
-                                                <!-- image -->
-                                                <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image5.jpg" src="assets/images/cosmetic-products/product-image5.jpg" alt="image" title="product" />
-                                                <!-- End image -->
-                                                <!-- Hover image -->
-                                                <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image5-1.jpg" src="assets/images/cosmetic-products/product-image5-1.jpg" alt="image" title="product" />
-                                                <!-- End hover image -->
-                                            </a>
-                                            <!-- end product image -->
-
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                                <button class="btn btn-addto-cart" type="button">Add to cart</button>
-                                            </form>
-                                            <div class="button-set">
-                                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                    <i class="icon anm anm-search-plus-r"></i>
-                                                </a>
-                                                <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                                        <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!-- end product button -->
-                                        </div>
-                                        <!-- end product image -->
-
-                                        <!--start product details -->
-                                        <div class="product-details text-center">
-                                            <!-- product name -->
-                                            <div class="product-name">
-                                                <a href="#">A-Line Mini Dress in Blue</a>
-                                            </div>
-                                            <!-- End product name -->
-                                            <!-- product price -->
-                                            <div class="product-price">
-                                                <span class="price">$348.00</span>
-                                            </div>
-                                            <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <!-- End product details -->
-                                    </div>
-                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
-                                        <!-- start product image -->
-                                        <div class="product-image">
-                                            <!-- start product image -->
-                                            <a href="#">
-                                                <!-- image -->
-                                                <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-products/product-image6.jpg" src="assets/images/cosmetic-products/product-image6.jpg" alt="image" title="product" />
-                                                <!-- End image -->
-                                                <!-- Hover image -->
-                                                <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-products/product-image6-1.jpg" src="assets/images/cosmetic-products/product-image6-1.jpg" alt="image" title="product" />
-                                                <!-- End hover image -->
-                                            </a>
-                                            <!-- end product image -->
-
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                                <button class="btn btn-addto-cart" type="button">Add to cart</button>
-                                            </form>
-                                            <div class="button-set">
-                                                <a href="#content_quickview" title="Quick View" class="quick-view-popup quick-view" tabindex="0">
-                                                    <i class="icon anm anm-search-plus-r"></i>
-                                                </a>
-                                                <div class="wishlist-btn">
-                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                                        <i class="icon anm anm-heart-l"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="compare-btn">
-                                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                                        <i class="icon anm anm-random-r"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <!-- end product button -->
-                                        </div>
-                                        <!-- end product image -->
-
-                                        <!--start product details -->
-                                        <div class="product-details text-center">
-                                            <!-- product name -->
-                                            <div class="product-name">
-                                                <a href="#">Asymmetric Dress in Black</a>
-                                            </div>
-                                            <!-- End product name -->
-                                            <!-- product price -->
-                                            <div class="product-price">
-                                                <span class="price">$578.00</span>
-                                            </div>
-                                            <!-- End product price -->
-
-                                            <div class="product-review">
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                                <i class="font-13 fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <!-- End product details -->
-                                    </div>
+                                   
+                                    <?php
+                        }
+                      }
+                      ?>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="infinitpaginOuter">
-                            <div class="infinitpagin">
-                                <a href="#" class="btn loadMore">Load More</a>
-                            </div>
-                        </div>
+                       
                     </div>
                     <!--End Main Content-->
                 </div>

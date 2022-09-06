@@ -36,7 +36,7 @@
                             </li>
                             <li class="lvl1 parent dropdown"><a href="blog-article.php">Blog <i class="anm anm-angle-down-l"></i></a></li>
 
-                            <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a>
+                            <!-- <li class="lvl1 parent megamenu"><a href="about-us.php">About <i class="anm anm-plus-l"></i></a> -->
                             <li class="lvl1 parent megamenu"><a href="contact-us.php">Contact <i class="anm anm-plus-l"></i></a></li>
                             <li class="lvl1 parent megamenu"><a href="faqs.php">FAQ <i class="anm anm-plus-l"></i></a></li>
                         </ul>

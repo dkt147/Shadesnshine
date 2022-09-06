@@ -1,3 +1,6 @@
+<?php if(isset($_GET['message']) and $_GET['message'] == "success"){?>
+<script>alert("Your query has been sent, Thanks!")</script>
+<?php }?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -33,10 +36,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-8 col-lg-8 mb-4">
-                        <h2>Drop Us A Line</h2>
-                        <p>Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500 </p>
+                        <h2>Connect with us</h2>
+                        <p>You can contact us for any Query or Collaboration </p>
                         <div class="formFeilds contact-form form-vertical">
-                            <form action="http://annimexweb.com/items/belle/assets/php/mail.php" method="post" id="contact_form" class="contact-form">
+                            <form action="_contact.php" method="post" id="contact_form" class="contact-form">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                         <div class="form-group">
@@ -70,7 +73,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                        <input type="submit" class="btn" value="Send Message">
+                                        <input type="submit" class="btn" value="Send Message" name="contact-us">
                                     </div>
                                 </div>
                             </form>
@@ -86,10 +89,10 @@
                                 <p>55 Gallaxy Enque, 2568 steet, 23568 NY</p>
                             </li>
                             <li class="phone"><i class="icon anm anm-phone-s"></i>
-                                <p>(440) 000 000 0000</p>
+                                <p>(+92) 333 3735290</p>
                             </li>
                             <li class="email"><i class="icon anm anm-envelope-l"></i>
-                                <p>sales@yousite.com</p>
+                                <p>shadesnshine786@gmail.com</p>
                             </li>
                         </ul>
                         <hr />
